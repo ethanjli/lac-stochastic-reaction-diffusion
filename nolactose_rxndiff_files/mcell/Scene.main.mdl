@@ -1,0 +1,74 @@
+INCLUDE_FILE = "Scene.parameters.mdl"
+
+ITERATIONS = 20000
+TIME_STEP = 1e-06
+VACANCY_SEARCH_DISTANCE = 10
+
+INCLUDE_FILE = "Scene.initialization.mdl"
+
+INCLUDE_FILE = "Scene.molecules.mdl"
+
+INCLUDE_FILE = "Scene.surface_classes.mdl"
+
+INCLUDE_FILE = "Scene.reactions.mdl"
+
+INCLUDE_FILE = "Scene.geometry.mdl"
+
+INCLUDE_FILE = "Scene.mod_surf_regions.mdl"
+
+INSTANTIATE Scene OBJECT
+{
+  Cell OBJECT Cell {}
+  System OBJECT System {}
+  cellular_lactose RELEASE_SITE
+  {
+   SHAPE = Scene.Cell
+   MOLECULE = lactose
+   CONCENTRATION = 1e-08
+   RELEASE_PROBABILITY = 1
+  }
+  cellular_bgal RELEASE_SITE
+  {
+   SHAPE = Scene.Cell
+   MOLECULE = bgal
+   GAUSSIAN_RELEASE_NUMBER
+   {
+        MEAN_NUMBER = 15
+        STANDARD_DEVIATION = 3
+      }
+   RELEASE_PROBABILITY = 1
+  }
+  cellular_lactose_permease RELEASE_SITE
+  {
+   SHAPE = Scene.Cell
+   MOLECULE = lactose_permease
+   NUMBER_TO_RELEASE = 40
+   RELEASE_PROBABILITY = 1
+  }
+  membrane_lactose_permease RELEASE_SITE
+  {
+   SHAPE = Scene.Cell
+   MOLECULE = lactose_permease_membrane'
+   NUMBER_TO_RELEASE = 40
+   RELEASE_PROBABILITY = 1
+  }
+  dna_lac_operon RELEASE_SITE
+  {
+   SHAPE = Scene.Cell
+   MOLECULE = lac_operon_repressed
+   NUMBER_TO_RELEASE = 10
+   RELEASE_PROBABILITY = 1
+  }
+  cellular_lacI RELEASE_SITE
+  {
+   SHAPE = Scene.Cell
+   MOLECULE = lacI
+   NUMBER_TO_RELEASE = 100
+   RELEASE_PROBABILITY = 1
+  }
+}
+
+sprintf(seed,"%05g",SEED)
+
+INCLUDE_FILE = "Scene.rxn_output.mdl"
+

@@ -1,0 +1,32 @@
+MODIFY_SURFACE_REGIONS
+{
+  System[left_boundary]
+  {
+    SURFACE_CLASS = system_boundary
+  }
+  System[right_boundary]
+  {
+    SURFACE_CLASS = system_boundary
+  }
+  System[bottom_boundary]
+  {
+    SURFACE_CLASS = system_boundary
+  }
+  System[top_boundary]
+  {
+    SURFACE_CLASS = system_boundary
+  }
+  System[front_boundary]
+  {
+    SURFACE_CLASS = system_boundary
+  }
+  System[back_boundary]
+  {
+    SURFACE_CLASS = system_boundary
+  }
+  Cell[surface]
+  {
+    SURFACE_CLASS = membrane
+  }
+}
+

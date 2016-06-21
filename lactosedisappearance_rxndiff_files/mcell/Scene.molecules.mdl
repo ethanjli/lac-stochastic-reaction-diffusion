@@ -1,0 +1,54 @@
+DEFINE_MOLECULES
+{
+  lactose
+  {
+    DIFFUSION_CONSTANT_3D = 4.9e-07
+    TARGET_ONLY
+  }
+  bgal
+  {
+    DIFFUSION_CONSTANT_3D = 1e-06
+  }
+  lactose_external
+  {
+    DIFFUSION_CONSTANT_3D = 4.9e-06
+    TARGET_ONLY
+  }
+  lactose_membrane
+  {
+    DIFFUSION_CONSTANT_2D = 4.9e-06
+  }
+  lactose_permease_membrane
+  {
+    DIFFUSION_CONSTANT_2D = 1e-07
+  }
+  lactose_permease
+  {
+    DIFFUSION_CONSTANT_3D = 1e-06
+  }
+  lactose_permease_bound
+  {
+    DIFFUSION_CONSTANT_2D = 1e-07
+  }
+  lac_operon
+  {
+    DIFFUSION_CONSTANT_3D = 3e-08
+  }
+  lacI
+  {
+    DIFFUSION_CONSTANT_3D = 1e-05
+  }
+  lac_operon_repressed
+  {
+    DIFFUSION_CONSTANT_3D = 3e-08
+  }
+  lacI_bound
+  {
+    DIFFUSION_CONSTANT_3D = 1e-05
+  }
+  lac_operon_derepressing
+  {
+    DIFFUSION_CONSTANT_3D = 3e-08
+  }
+}
+

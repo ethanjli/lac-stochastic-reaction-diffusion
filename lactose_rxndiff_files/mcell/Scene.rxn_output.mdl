@@ -1,0 +1,10 @@
+REACTION_DATA_OUTPUT
+{
+  STEP=0
+  {COUNT[bgal,WORLD]}=> "./react_data/seed_" & seed & "/bgal.World.dat"
+  {COUNT[lac_operon,WORLD]}=> "./react_data/seed_" & seed & "/lac_operon.World.dat"
+  {COUNT[lacI,WORLD]}=> "./react_data/seed_" & seed & "/lacI.World.dat"
+  {COUNT[lactose,WORLD]}=> "./react_data/seed_" & seed & "/lactose.World.dat"
+  {COUNT[lactose_permease_membrane,WORLD]}=> "./react_data/seed_" & seed & "/lactose_permease_membrane.World.dat"
+}
+

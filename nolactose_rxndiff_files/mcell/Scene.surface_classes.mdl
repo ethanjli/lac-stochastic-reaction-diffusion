@@ -1,0 +1,11 @@
+DEFINE_SURFACE_CLASSES
+{
+  system_boundary
+  {
+    CLAMP_CONCENTRATION lactose_external, = 0
+  }
+  membrane
+  {
+  }
+}
+

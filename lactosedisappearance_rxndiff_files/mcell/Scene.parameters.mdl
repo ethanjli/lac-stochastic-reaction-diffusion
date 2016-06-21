@@ -1,0 +1,17 @@
+/* DEFINE PARAMETERS */
+k_id = 2.300000    /* Rate of membrane diffusion of lactose; actually 2.3e-3    units=s-1 */
+k_degp = 200.000000    /* Degradation rate of proteins; actual value is 2e-4 for lactose permease    units=s-1 */
+d_cytosolic_protein = 0.000001    /* Diffusion coefficient of a typical cytosolic protein    units=cm2/s */
+k_yion = 30000000.000000    /* Rate of binding of external lactose; actual value is 3e4    units=s-1 */
+k_yioff = 120.000000    /* Rate of external lactose unbinding; actual value is 1.2e-1    units=s-1 */
+k_it = 70000.000000    /* Rate of lactose transport; actual value is 1.2e1    units=s-1 */
+d_lacI = 0.000010    /* Diffusion coefficient of lacI    units=cm^2/s */
+d_dna = 0.000000    /* Diffusion coefficient of the lac operon    units=cm2/s */
+k_ron = 20000000000.000000    /* Rate of repressor attachment to operon; actual value is 2e5    units=M-1s-1 */
+k_roff = 63.000000    /* Rate of repressor detachment from operon; actual value is 6.3e-1    units=s-1 */
+k_ion = 20000000000.000000    /* Rough rate of lactose binding to lacI; actual value is 2e4    units=M-1s-1 */
+k_ioff = 10000.000000    /* Rough rate of lactose unbinding from repressor; actual value is 1    units=s-1 */
+k_iopon = 600000000.000000    /* Rough rate at which lactose binds to repressed lac operon; actual value is 6e2    units=M-1s-1 */
+k_i2roff = 30000.000000    /* Rough rate at which repressed lac operon bound to lactose becomes unrepressed; actual value is 3e-1  */
+k_expression = 100000.000000    /* Rate of gene expression  */
+
